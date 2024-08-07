@@ -1,0 +1,12 @@
+void setup() {
+  pinMode(10, INPUT);
+
+  Serial.begin(19200);
+}
+
+void loop() {
+  if (digitalRead(10) == LOW) 
+  {
+    Serial.print("TXDU0002,hello");
+  }
+}
