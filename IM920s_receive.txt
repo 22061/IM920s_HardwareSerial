@@ -1,17 +1,16 @@
-char input[30];
+char buf[256];
 int i = 0;
 
 void setup() {
-  Serial.begin(19200);
+  Serial.begin(115200);
 }
 
 void loop() {
-  if (Serial.available()) 
+  if(Serial.available()) 
   {
-    input[i] = Serial.read();
-    if (input[i] == '\n') 
+    buf[i] = Serial.read();
+    if(buf[i] == '\n') 
     {
-      input[i] = '\n';
       i = 0;
     }
     else
