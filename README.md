@@ -1,2 +1,2 @@
 # IM920s_HardwareSerial
-IM920sを使った通信
+esp32, arduino megaによるIM920sを使った通信
